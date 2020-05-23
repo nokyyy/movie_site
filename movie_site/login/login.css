@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	font-weight: 300;
+}
+
+h1{
+  font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-size: 40px;
+	transition-duration: 1s;
+	text-align: center;
+	font-weight: 200;
+}
+
+.wrapper{
+  width: 100%;
+  /*background: #50a3a2;
+  background: -webkit-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: -moz-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: -o-linear-gradient(top left, #50a3a2 0%, #53e3a6 100%);
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);*/
+
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+.exbtn{
+	display: block;
+	/*appearance: none;なにこれ*/
+	outline: 0;
+	/*border: 1px solid fade(white, 40%);*/
+	background-color:rgba(255,255,255,0.8);
+	width: 250px;
+
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 10px auto 5px auto;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+
+	color: blue;
+
+	transition-duration: 0.25s;
+	font-weight: 300;
+	}
+}
+.exptn:hover{
+	background-color: 40%;
+}
+.exbtn:focus{
+	background-color: rgba(255,255,255,0.8);;
+	width: 300px;
+}
+form{
+	padding: 20px 0;
+  text-align: center;
+  color:red;
+  font-weight:bold;
+}
+
+button{
+	background-color: green;
+	border: 0;
+	padding: 10px 15px;
+	color: white;
+	border-radius: 3px;
+	width: 250px;
+	cursor: pointer;
+	font-size: 18px;
+	transition-duration: 0.25s;
+  margin: 0 auto;
+
+	&:hover{
+		background-color: rgb(245, 247, 249);
+	}
+}
+#cen{
+  text-align: center;
+}
+#new{
+  border-radius: 5px;
+  background-color: #FFD700;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.btn{
+  border-radius: 5px;
+  background-color: #20B2AA;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+#delpass{
+  padding: 5px 20px 5px 0;
+}
+#del{
+  width: 30px;
+  color: #fff;
+  border-radius: 10px;
+  background-color: red;
+  padding: 5px 37px 5px 10px;
+  font-size: 14px;
+}
+
+#entire{
+	max-width: 600px;
+	border-radius: 10px;
+	padding: 100px 0;
+	margin: 70px auto 50px auto;
+  background: #50a3a2;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+}
+
+/*こっからテーブルボタン表示*/
+th, td {
+  border: solid 1px;
+  padding: 10px;
+}
+
+th:nth-child(2) {
+  width: 200px;
+}
+th:nth-child(3) {
+  width: 70px;
+}
+
+
+th {
+    background-color: #2196F3;
+    color:  #fff;
+    font-weight:  normal;
+}
+
+td {
+  border-color:  #fff;
+  height: 40px;
+}
+tbody{
+  margin: 0 auto;
+}
+#userTable {
+  border-collapse: collapse;
+  display: none;
+  font-size: 16px;
+}

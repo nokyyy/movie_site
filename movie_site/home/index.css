@@ -1,0 +1,104 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	font-weight: 300;
+}
+
+h1{
+  font-family: 'Source Sans Pro', sans-serif;
+	color: white;
+	font-size: 40px;
+	transition-duration: 1s;
+	font-weight: 200;
+	padding-left: 30px;
+	background-color: #4267b2;
+}
+
+body{
+    background-color: #eaebee;
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+#base{
+  /*width: calc(100% - 40px); 右端っこから40px削る*/
+}
+
+#user {
+  width: 200px;
+	margin: 16px 25px 0 25px;
+}
+
+#right{
+  width: 250px;
+  height: 600px;
+  float: left;
+  background-color: #fff;
+	margin-right: 50px;
+	position: fixed;
+}
+#right p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#center{
+  float: left;
+  margin-left: 30px:
+}
+
+.display{
+  width: 600px;
+	margin-left: 300px;
+}
+.display>.contents{
+	padding: 20px;
+	margin-bottom: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 1px black;
+}
+.contents>img{
+	margin-left: 20px;
+	width: 500px;
+	max-height: 750px;
+}
+.contents>video{
+	margin-left: 20px;
+	width: 500px;
+	max-height: 750px;
+}
+/*
+	box-shadow: 0 0 1px black;
+	filter: drop-shadow(0 0 10px black);
+*/

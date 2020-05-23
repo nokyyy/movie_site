@@ -1,0 +1,28 @@
+登録画面に行くまでの概要
+
+phpmailerを使用し、メールを送る
+	registration_mail_form.phpがEmail投稿フォーム
+		base64_encode()を用いてtokenを発行
+	
+	registration_mail_check.php
+		クロスサイトリクエストフォージェリー(CSRF)対策で$_POSTトークンと$_SESSIONトークンを受け取り比較
+		クリックジャッキング対策
+		DBに接続
+			if文で$_POSTされているか判定(されていなければheaderLOC)
+				if文で$_POST['mail']に値が入っているか判定(else->)
+				!preg_match関数を用いて文字形式、メールかどうか
+					$errors[]にエラー処理を入れていく
+					
+					$errorが0ならばDB処理開始
+					hash化してURLトークンを作る
+					pre_memberテーブルに[urlトークン,メールアドレス,日付]を入れる
+					
+					hashedURLをメール本文に載せ送信(phpMailerを使用)
+						get送信できるようにURLの後に?で連想配列を作る
+					
+					
+					
+					トークンを遷移ページで呼び出して照合できればいい！
+					1.$_POST送信と$_SESSION[]で称号 -手軽にできる(毎回変わる)
+					2.保存をして遷移先で呼び出して称号 -少し手間がかかる(変わらない)
+						->変わらないデータ:個人情報の照合に使う

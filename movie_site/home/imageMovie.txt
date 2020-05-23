@@ -1,0 +1,12 @@
+概要
+	画像・動画を投稿しデータベースに保存
+	DBに保存した画像・動画をfacebookみたいな感じで表示
+
+データベース
+	名前:madiatest
+		テーブル名:media
+			カラム名
+				id:画像・動画id(Auto_Increment)
+				fname:画像・動画の名前
+				extention:画像・動画の拡張子
+				raw_data:画像・動画のバイナリデータ

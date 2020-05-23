@@ -1,0 +1,10 @@
+registration_form.php
+	(CSRF)
+	再び$_SESSIONと$_POST用のトークンをbase64_encode()で作る
+	クリックジャッキング
+	DB接続
+	
+		$_GETが空か判定
+			ifで$urltokenが空か判定
+				$urltokenと一致し、24Flagが0のものをDBから抽出
+					$errors[]を使う
