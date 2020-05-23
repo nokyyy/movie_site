@@ -16,6 +16,7 @@
 # Installation
 
 下記のサイトより「phpmailer」クローン 
+
 git clone https://github.com/PHPMailer/PHPMailer.git
  
 # Usage
